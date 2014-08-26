@@ -8,7 +8,6 @@ RSpec.describe PrimeFactor do
   let(:prime_f) { PrimeFactor.new }
   describe "#highest_prime_factor_of" do
     it "finds highest prime factor of a given number without ruby class Prime" do
-      binding.pry
       expect(prime_f.highest_prime_factor_of(20)).to eq 5
     end
   end
