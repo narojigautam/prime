@@ -10,7 +10,7 @@ class PrimeFactor
       next unless context_num % pivot == 0
       is_prime = true
       primes.each do |prime|
-        is_prime = false and break if prime > sqroot # does not work well for factors of 20
+        is_prime = false and break if prime > sqroot
         is_prime = false and break if pivot % prime == 0
       end
       primes << pivot if is_prime
